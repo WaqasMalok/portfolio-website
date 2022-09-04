@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;300;400;500;600;700&family=Raleway:ital,wght@0,500;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+/* font-family: 'Anek Telugu', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+
+
+
+
+
+* {
+   font-family: 'Anek Telugu', sans-serif;
+   scroll-behavior: smooth;
+}
+
+:root {
+   /* text color  */
+   --text-white: #fff;
+   --text-black: #000;
+   --text-dark: rgb(90, 90, 90);
+   --text-tomato: #f2545f;
+
+   /* text hover color  */
+   --text-hover-white: #fff;
+   --text-hover-black: #000;
+   --text-hover-tomato: #f2545f;
+
+   /* font familys   */
+   --font-anek-telugu: 'Anek Telugu', sans-serif;
+   --font-raleway: 'Raleway', sans-serif;
+
+   /* icon color  */
+   --icon-white: #fff;
+   --icon-tomato: #f2545f;
+
+   /* icon hover color  */
+   --icon-hover-white: #fff;
+   --icon-hover-tomato: #f2545f;
+
+   /* backgronud color  */
+   --bg-white: #fff;
+   --bg-black: #000;
+   --bg-tomato: #f2545f;
+   --bg-yellow: #f1c11a;
+
+   /* backgronud hover color  */
+   --bg-hover-white: #fff;
+   --bg-hover-black: #000;
+   --bg-hover-tomato: #f2545f;
+
+   /* button background color  */
+   --button-bg-white: #fff;
+   --button-bg-black: #000;
+
+   /* button hover background color  */
+   --button-hover-bg-white: #fff;
+   --button-hover-bg-black: #000;
+}
+
+/* icons style  */
+.icons i {
+   color: var(--icon-white);
+   padding: 10px;
+   border-radius: 100%;
+   transition: all 0.5s ease-in-out;
+}
+
+.icons i:hover {
+   color: var(--icon-hover-tomato);
+   background-color: var(--bg-hover-white);
+   transform: translateY(-3px);
+}
+
+/* section padding  */
+.section-lg-padding {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.section-sm-padding {
+   padding-top: 90px;
+   padding-bottom: 90px;
+}
+
+p {
+   font-size: 15px;
+   font-family: var(--font-anek-telugu);
+   line-height: 1.5rem;
+   font-weight: 400;
+}
+
+/* our button style  */
+.button {
+   padding: 15px 45px 10px 45px;
+   border-radius: 50px;
+   font-size: 14px;
+   display: inline-flex;
+   color: var(--text-white);
+   font-family: 'Anek Telugu', sans-serif;
+   transition: all 0.3s ease-in-out;
+   text-decoration: none;
+}
+
+.tittle {
+   font-family: var(--font-anek-telugu);
+   font-size: 2rem;
+   font-weight: 500;
+}
+
+
+
+/* OUR HEADER SECTION  */
+#navigation {
+   width: 100%;
+   padding: 15px 0px 10px 0px;
+   color: #fff;
+}
+
+/* navigation button  */
+.menubtn {
+   width: 32px;
+   /* border: 1px solid red; */
+   float: right;
+   padding: 5px;
+}
+
+header {
+   position: fixed;
+   top: 0%;
+   left: 0%;
+   right: 0%;
+   z-index: 999;
+   width: 100%;
+   transition: all 0.5s ease-in-out;
+}
+
+.logo-icon {
+   white-space: nowrap;
+}
+
+@media(max-width:1220px) {
+   .navbar {
+      display: none;
+   }
+
+}
+
+
+
+.navtransparent {
+   background-color: transparent;
+}
+
+.nav .nav-item .nav-link {
+   color: #fff;
+   font-size: 14px;
+}
+
+.nav .nav-item .nav-link:hover {
+   color: var(--text-hover-tomato);
+}
+
+.nav .nav-item {
+   margin: 0px 10px 0px 0px;
+}
+
+/* our mb nav  */
+@media(min-width:1220px) {
+   .menubtn {
+      display: none;
+   }
+
+}
+
+.navbar-mb {
+   position: absolute;
+   top: 100%;
+   left: 0%;
+   right: 0%;
+   padding: 0%;
+   margin: 0%;
+   width: 100%;
+   height: 100vh;
+   background:
+      linear-gradient(rgb(0, 0, 0), transparent),
+      linear-gradient(45deg, #f2545f62, transparent),
+      linear-gradient(-45deg, #f2545f9d, transparent);
+   /* background-blend-mode: multiply;  */
+   transition: all 0.5s ease-in-out;
+   z-index: 888;
+   display: none;
+}
+
+.navbar-mb ul {
+   position: relative;
+   flex-direction: column;
+   height: 100%;
+}
+
+.navbar-mb ul li {
+   font-size: 40px;
+   position: relative;
+
+}
+
+.navbar-mb ul li .nav-link {
+   position: relative;
+
+}
+
+/* navigation navbar show button  */
+.menu-show,
+.menu-hide {
+   cursor: pointer;
+   padding: 5px;
+
+}
+
+.menu-show:hover .bar:nth-child(2) {
+   transform: translateX(5px);
+}
+
+.menu-show:hover .bar,
+.menu-hide:hover .bar {
+   background-color: #f2545f;
+}
+
+.menu-show .bar:nth-child(1) {
+   transform: translateY(-3px);
+}
+
+.menu-show .bar:nth-child(3) {
+   transform: translateY(3px);
+}
+
+.bar {
+   transition: all 0.5s ease-in-out;
+   background-color: #fff;
+   width: 20px;
+   height: 2px;
+}
+
+/* navigation bar hide button  */
+.menu-hide {
+   display: none;
+}
+
+.menu-hide:hover .fas {
+   color: #f2545f;
+}
+
+.menu-hide .fas {
+   font-size: 25px;
+}
+
+/* OUR HERO SECTION  */
+#hero {
+   width: 100%;
+   height: 100vh;
+   background: url(https://templatemo.com/templates/templatemo_486_new_event/images/intro-bg.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: var(--text-white);
+   position: relative;
+}
+
+.hero__subtittle {
+   font-size: 25px;
+   word-spacing: 10px;
+   font-weight: 600;
+}
+
+@media(max-width:1000px) {
+
+   .hero__subtittle {
+      word-spacing: 5px;
+   }
+}
+
+@media(max-width:700px) {
+
+   .hero__subtittle {
+      word-spacing: 5px;
+   }
+}
+
+.hero__tittle {
+   font-size: 55px;
+   font-weight: 600;
+   font-family: 'Raleway', sans-serif;
+}
+
+.hero__btn__white,
+.hero__btn__tomatto {
+   display: inline-block;
+}
+
+.hero__btn__white a,
+.hero__btn__tomatto a {
+   transition: all 0.3s ease-in-out;
+   color: #fff;
+   border-radius: 0px;
+   padding: 12px 45px 9px 45px;
+   font-family: 'Anek Telugu', sans-serif;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.hero__btn__white a {
+   border: 2px solid #fff;
+}
+
+.hero__btn__white a:hover {
+   background-color: var(--bg-hover-white);
+   color: #000;
+}
+
+.hero__btn__tomatto a {
+   background-color: var(--bg-tomato);
+   border: 2px solid #f2545f;
+}
+
+.hero__btn__tomatto a:hover {
+   background-color: transparent;
+   border-color: #fff;
+   color: #fff;
+}
+
+/* OUR COMPANY SECTIOIN  */
+.company__img {
+   position: relative;
+
+}
+
+.company__img img {
+   width: 100%;
+   height: 100%;
+
+}
+.company__text h6{
+   letter-spacing: 4px;
+}
+.company__text h6{
+   letter-spacing: 4px;
+}
+.company__text p{
+  line-height: 2rem;
+  font-size: 14px;
+  word-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* OUE TALK SECTION START  */
+#talk {
+   background-color: var(--bg-yellow);
+}
+
+.talk__icon {
+   margin-right: 20px;
+}
+
+.talk__icon .fa-desktop {
+   font-size: 30px;
+   color: var(--icon-white);
+}
+
+.talk__text p {
+   font-size: 13px;
+}
+
+.talk__btn {
+   border: 3px solid #fff;
+   font-family: var(--font-raleway);
+}
+
+.talk__btn:hover {
+   border: 3px solid #f2545f;
+   color: var(--text-hover-black);
+   background-color: var(--bg-hover-tomato);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OUR VENUE SECTION START  */
+#venue {
+   background: url(https://templatemo.com/templates/templatemo_486_new_event/images/venue-bg.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.venue__content {
+   width: 500px;
+   max-width: 100%;
+}
+
+.venue__content h2 {
+   font-size: 30px;
+   font-weight: 500;
+}
+
+.venue__content address {
+   font-size: 19px;
+   font-weight: 600;
+   line-height: 2rem;
+}
+
+/* OUR QUESTOINS SECTION START  */
+.question__des {
+   padding: 30px;
+   background: #fff;
+   display: none;
+   box-shadow: 2px 2px 6px 0px rgba(37, 37, 37, 0.089);
+}
+
+.question__header {
+   color: var(--text-white);
+   background: #f0f0f0;
+   color: #505050;
+   padding: 15px 30px;
+
+}
+
+.question__header h2 {
+   font-size: 19px;
+   font-family: var(--font-anek-telugu);
+}
+
+.question__open,
+.question__close {
+   font-size: 15px;
+   cursor: pointer;
+}
+
+.question__open:hover,
+.question__close:hover {
+   color: #f2545f;
+}
+
+.question__close {
+   display: none;
+}
+
+/* OUR COUNTER SECTOIN STYLED  */
+.counter {
+   background:
+      linear-gradient(rgb(136, 145, 150), transparent),
+      linear-gradient(-45deg, rgb(0, 0, 0), transparent),
+      linear-gradient(45deg, rgb(0, 0, 0), transparent);
+   background-blend-mode: multiply;
+   color: var(--text-white);
+}
+
+#counter .container .row {
+   padding-left: 120px;
+   padding-right: 120px;
+}
+
+@media (max-width:1395px) {
+   #counter .container .row {
+      padding-left: 0px;
+      padding-right: 0px;
+   }
+}
+
+.counter-card i {
+   font-size: 45px;
+   color: var(--icon-tomato);
+   padding: 30px;
+}
+
+.counter-card h2 {
+   font-size: 25px;
+   font-family: var(--font-anek-telugu);
+}
+
+/* OUR CONTACT SECTION STYLE  */
+#contact {
+   background: url(https://templatemo.com/templates/templatemo_486_new_event/images/contact-bg.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.contact__text {
+   width: 100%;
+   max-width: 470px;
+}
+
+.contact__text h2 {
+   font-family: var(--font-anek-telugu);
+   font-weight: 500;
+   font-size: 25px;
+}
+
+.contact__text__btn {
+   background-color: var(--bg-tomato);
+}
+
+.contact__text__btn:hover {
+   background-color: var(--bg-hover-black);
+   color: var(--text-hover-white);
+}
+
+.contact__box {
+   padding: 5rem 4rem 5rem 4rem;
+   width: 500px;
+   max-width: 100%;
+   background-color: var(--bg-white);
+}
+
+.contact__box input,
+.contact__box textarea {
+   border: none;
+   border-bottom: 1px solid rgba(230, 228, 228, 0.589);
+   font-size: 13px;
+   font-family: var(--font-anek-telugu);
+}
+
+.contact__box__btn {
+   margin-top: 50px;
+   border: 1px solid #000;
+   color: var(--text-black);
+   
+}
+
+.contact__box__btn:hover {
+   background-color: var(--bg-hover-tomato);
+   color: var(--text-hover-white);
+   border-color: #f2545f;
+}
+
+/* OUR SPONSORE SECTION START  */
+.sponsor-head p {
+   font-weight: 300;
+}
+
+.sponsore-card {
+   padding: 10px 0px;
+}
+
+.sponsore-card img {
+   width: 90%;
+}
+
+/* footer section style start  */
+#footer {
+   width: 100%;
+   position: relative;
+   background:
+      linear-gradient(rgb(136, 145, 150), transparent),
+      linear-gradient(-45deg, rgb(0, 0, 0), transparent),
+      linear-gradient(45deg, rgb(0, 0, 0), transparent);
+   background-blend-mode: multiply;
+}
+
+.svgcolor-light {
+   position: relative;
+   top: -130px;
+   width: 70%;
+}
+
+.svgcolor-light>path {
+   fill: white;
+   stroke: white;
+   stroke-width: 0;
+}
+
+.footer__content {
+   color: #fff;
+}
+
+.copyright {
+   word-spacing: 4px;
+}
+
+.copyright-link {
+   color: var(--text-tomato);
+}
+
+.footer__ul {
+   flex-flow: wrap;
+}
+
+.footer__ul .fa-facebook-f {
+   padding: 9px 12px;
+}
+
+.scroll-button {
+   position: absolute;
+   bottom: 10%;
+   right: 10%;
+}
+
+
+
+
+/* javascripte useing style code  */
+.navblack {
+   background-color: #000;
+   box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.158);
+
+}
