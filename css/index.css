@@ -39,6 +39,7 @@
 
    /* backgronud color  */
    --bg-white: #fff;
+   --bg-white-50: #faf9facb;
    --bg-black: #000;
    --bg-tomato: #f2545f;
    --bg-yellow: #f1c11a;
@@ -56,7 +57,11 @@
    --button-hover-bg-white: #fff;
    --button-hover-bg-black: #000;
 }
-
+#cover{
+   width: 100%;
+   max-width: 1800px;
+   margin: auto;
+}
 /* icons style  */
 .icons i {
    color: var(--icon-white);
@@ -143,9 +148,7 @@ header {
       display: none;
    }
 
-}
-
-
+} 
 
 .navtransparent {
    background-color: transparent;
@@ -258,9 +261,8 @@ header {
    width: 100%;
    height: 100vh;
    background: url(https://templatemo.com/templates/templatemo_486_new_event/images/intro-bg.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+   background-size: cover;   
+   background-attachment: fixed;
    color: var(--text-white);
    position: relative;
 }
@@ -327,6 +329,36 @@ header {
    color: #fff;
 }
 
+
+
+
+
+/* OUR PROGRAMER SECTION  */
+#programer{
+   background-color:  var(--bg-white-50);
+
+}  
+.programer__option{
+   border-bottom: 1px solid rgba(59, 59, 59, 0.192); 
+}
+.programer__option p{
+   font-weight: 600; 
+   cursor: pointer; 
+   letter-spacing: 1px;
+}
+.programer__option p:hover{
+color: var(--text-hover-tomato); 
+border-bottom: 1px solid #f2545f;
+}
+
+
+
+
+
+
+
+
+
 /* OUR COMPANY SECTIOIN  */
 .company__img {
    position: relative;
@@ -381,12 +413,12 @@ header {
 
 .talk__btn {
    border: 3px solid #fff;
-   font-family: var(--font-raleway);
+   font-family: var(--font-raleway); 
 }
 
 .talk__btn:hover {
    border: 3px solid #f2545f;
-   color: var(--text-hover-black);
+   color: var(--text-hover-white);
    background-color: var(--bg-hover-tomato);
 }
 
@@ -406,11 +438,9 @@ header {
 
 /* OUR VENUE SECTION START  */
 #venue {
-   background: url(https://templatemo.com/templates/templatemo_486_new_event/images/venue-bg.jpg);
+   background: url(https://templatemo.com/templates/templatemo_486_new_event/images/venue-bg.jpg); 
+   background-size: cover;   
    background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
 }
 
 .venue__content {
@@ -501,10 +531,8 @@ header {
 /* OUR CONTACT SECTION STYLE  */
 #contact {
    background: url(https://templatemo.com/templates/templatemo_486_new_event/images/contact-bg.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
+   background-size: cover;  
+   
 }
 
 .contact__text {
