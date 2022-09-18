@@ -1,11 +1,11 @@
 
 
- 
+
 
 function show() {
     let showbtn = document.getElementById("navshow-btn");
     let navbar = document.getElementById("navmb");
-    let hidebtn = document.getElementById("navhide-btn"); 
+    let hidebtn = document.getElementById("navhide-btn");
     showbtn.style.display = "none";
     hidebtn.style.display = "block";
     navbar.style.display = "block";
@@ -13,7 +13,7 @@ function show() {
 function hide() {
     let showbtn = document.getElementById("navshow-btn");
     let navbar = document.getElementById("navmb");
-    let hidebtn = document.getElementById("navhide-btn"); 
+    let hidebtn = document.getElementById("navhide-btn");
     showbtn.style.display = "block";
     hidebtn.style.display = "none";
     navbar.style.display = "none";
@@ -23,7 +23,7 @@ window.addEventListener("scroll", function () {
     let nav = document.querySelector("header");
     nav.classList.toggle("navblack", window.scrollY > 0);
 
-}); 
+});
 
 
 function open__des() {
@@ -122,19 +122,17 @@ function close3__des() {
 
 
 const parallax = document.getElementById("venue");
-window.addEventListener("scroll", function ()
-{
+window.addEventListener("scroll", function () {
     let offset = window.pageYOffset;
     parallax.style.backgroundPositionY = offset * 0.19 + "px";
 
 });
 const parallax2 = document.getElementById("contact");
-window.addEventListener("scroll", function ()
-{
+window.addEventListener("scroll", function () {
     let offset = window.pageYOffset;
     parallax2.style.backgroundPositionY = offset * 0.19 + "px";
 
-}); 
+});
 // const parallax3 = document.getElementById("hero");
 // window.addEventListener("scroll", function ()
 // {
@@ -142,3 +140,37 @@ window.addEventListener("scroll", function ()
 //     parallax3.style.backgroundPositionY = offset * 0.7 + "px";
 
 // }); 
+
+
+
+function first_day() {
+    let first_day = document.getElementById("first_day");
+    let first_card = document.getElementById("first_card");
+    let second_day = document.getElementById("second_day");
+    let third_day = document.getElementById("third_day");
+ 
+    first_card.style.display = "block";
+    second_card.style.display = "none";
+    therd_card.style.display = "none";
+};
+function second_day() {
+    let second_day = document.getElementById("second_day");
+    let second_card = document.getElementById("second_card");
+    let therd_card = document.getElementById("therd_card");
+
+    first_card.style.display = "none";
+    second_card.style.display = "block";
+    therd_card.style.display = "none";
+};
+function third_day() {
+    let third_day = document.getElementById("third_day");
+    let second_card = document.getElementById("second_card");
+    let therd_card = document.getElementById("therd_card");
+    let first_day = document.getElementById("first_day");
+
+
+
+    first_card.style.display = "none";
+    second_card.style.display = "none";
+    therd_card.style.display = "block";
+};

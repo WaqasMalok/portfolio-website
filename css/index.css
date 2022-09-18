@@ -57,11 +57,13 @@
    --button-hover-bg-white: #fff;
    --button-hover-bg-black: #000;
 }
-#cover{
+
+#cover {
    width: 100%;
    max-width: 1800px;
    margin: auto;
 }
+
 /* icons style  */
 .icons i {
    color: var(--icon-white);
@@ -119,6 +121,7 @@ p {
    width: 100%;
    padding: 15px 0px 10px 0px;
    color: #fff;
+   background-color: #00000011;
 }
 
 /* navigation button  */
@@ -148,7 +151,7 @@ header {
       display: none;
    }
 
-} 
+}
 
 .navtransparent {
    background-color: transparent;
@@ -172,7 +175,6 @@ header {
    .menubtn {
       display: none;
    }
-
 }
 
 .navbar-mb {
@@ -186,12 +188,12 @@ header {
    height: 100vh;
    background:
       linear-gradient(rgb(0, 0, 0), transparent),
-      linear-gradient(45deg, #f2545f62, transparent),
-      linear-gradient(-45deg, #f2545f9d, transparent);
+      linear-gradient(#000, transparent),
+      linear-gradient(45deg, #f2545f, transparent),
+      linear-gradient(-45deg, #f2545f, transparent);
    /* background-blend-mode: multiply;  */
    transition: all 0.5s ease-in-out;
    z-index: 888;
-   display: none;
 }
 
 .navbar-mb ul {
@@ -260,8 +262,9 @@ header {
 #hero {
    width: 100%;
    height: 100vh;
+   max-height: 1000px;
    background: url(https://templatemo.com/templates/templatemo_486_new_event/images/intro-bg.jpg);
-   background-size: cover;   
+   background-size: cover;
    background-attachment: fixed;
    color: var(--text-white);
    position: relative;
@@ -334,25 +337,66 @@ header {
 
 
 /* OUR PROGRAMER SECTION  */
-#programer{
-   background-color:  var(--bg-white-50);
+#programer {
+   background-color: var(--bg-white-50);
 
-}  
-.programer__option{
-   border-bottom: 1px solid rgba(59, 59, 59, 0.192); 
 }
-.programer__option p{
-   font-weight: 600; 
-   cursor: pointer; 
+
+.programer__option {
+   border-bottom: 1px solid rgba(59, 59, 59, 0.192);
+}
+
+.programer__option p {
+   font-weight: 600;
+   cursor: pointer;
+   letter-spacing: 1px;
+   white-space: nowrap;
+}
+
+.programer__option p:hover {
+   color: var(--text-hover-tomato);
+   border-bottom: 1px solid #f2545f;
+}
+
+
+#first_card, 
+ #second_card,
+#therd_card {
+   margin: 10px;
+   width: 1100px;
+   max-width: 100%;
+   display: none;
+}
+#first_card{
+   display: block;
+}  
+.programer_img {
+   width: 130px;
+}
+.programer_img img{
+    object-fit:contain;
+}
+.time span {
+   font-size: 14px;
+}
+
+.time i {
+   font-size: 11px;
+}
+
+.card_para p {
+   font-size: 17px;
    letter-spacing: 1px;
 }
-.programer__option p:hover{
-color: var(--text-hover-tomato); 
-border-bottom: 1px solid #f2545f;
+
+.programer_content {
+   width: 700px;
+   max-width: 100%;
 }
 
-
-
+.p-list {
+   border-bottom: 1px solid rgba(153, 150, 150, 0.11);
+}
 
 
 
@@ -370,16 +414,19 @@ border-bottom: 1px solid #f2545f;
    height: 100%;
 
 }
-.company__text h6{
+
+.company__text h6 {
    letter-spacing: 4px;
 }
-.company__text h6{
+
+.company__text h6 {
    letter-spacing: 4px;
 }
-.company__text p{
-  line-height: 2rem;
-  font-size: 14px;
-  word-spacing: 2px;
+
+.company__text p {
+   line-height: 2rem;
+   font-size: 14px;
+   word-spacing: 2px;
 }
 
 
@@ -413,7 +460,7 @@ border-bottom: 1px solid #f2545f;
 
 .talk__btn {
    border: 3px solid #fff;
-   font-family: var(--font-raleway); 
+   font-family: var(--font-raleway);
 }
 
 .talk__btn:hover {
@@ -438,8 +485,8 @@ border-bottom: 1px solid #f2545f;
 
 /* OUR VENUE SECTION START  */
 #venue {
-   background: url(https://templatemo.com/templates/templatemo_486_new_event/images/venue-bg.jpg); 
-   background-size: cover;   
+   background: url(https://templatemo.com/templates/templatemo_486_new_event/images/venue-bg.jpg);
+   background-size: cover;
    background-position: center;
 }
 
@@ -531,8 +578,8 @@ border-bottom: 1px solid #f2545f;
 /* OUR CONTACT SECTION STYLE  */
 #contact {
    background: url(https://templatemo.com/templates/templatemo_486_new_event/images/contact-bg.jpg);
-   background-size: cover;  
-   
+   background-size: cover;
+
 }
 
 .contact__text {
@@ -574,7 +621,7 @@ border-bottom: 1px solid #f2545f;
    margin-top: 50px;
    border: 1px solid #000;
    color: var(--text-black);
-   
+
 }
 
 .contact__box__btn:hover {
@@ -653,4 +700,14 @@ border-bottom: 1px solid #f2545f;
    background-color: #000;
    box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.158);
 
+}
+
+
+.programer-active{
+   color: var(--text-hover-tomato);
+   border-bottom: 1px solid #f2545f;
+}
+.pro-active{
+   color: black;
+   border-bottom: none;
 }
