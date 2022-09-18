@@ -98,7 +98,7 @@ p {
 
 /* our button style  */
 .button {
-   padding: 15px 45px 10px 45px;
+   padding: 10px 45px 10px 45px;
    border-radius: 50px;
    font-size: 14px;
    display: inline-flex;
@@ -359,23 +359,27 @@ header {
 }
 
 
-#first_card, 
- #second_card,
+#first_card,
+#second_card,
 #therd_card {
    margin: 10px;
    width: 1100px;
    max-width: 100%;
    display: none;
 }
-#first_card{
+
+#first_card {
    display: block;
-}  
+}
+
 .programer_img {
    width: 130px;
 }
-.programer_img img{
-    object-fit:contain;
+
+.programer_img img {
+   object-fit: contain;
 }
+
 .time span {
    font-size: 14px;
 }
@@ -442,20 +446,29 @@ header {
 
 /* OUE TALK SECTION START  */
 #talk {
-   background-color: var(--bg-yellow);
+   background:
+      linear-gradient(rgb(136, 145, 150), transparent),
+      linear-gradient(-45deg, rgb(0, 0, 0), transparent),
+      linear-gradient(45deg, rgb(0, 0, 0), transparent);
+   background-blend-mode: multiply;
 }
 
 .talk__icon {
    margin-right: 20px;
 }
 
-.talk__icon .fa-desktop {
+.talk__icon .fas {
    font-size: 30px;
    color: var(--icon-white);
 }
 
 .talk__text p {
    font-size: 13px;
+}
+
+.talk__text h2 {
+   color: var(--text-tomato);
+
 }
 
 .talk__btn {
@@ -703,11 +716,12 @@ header {
 }
 
 
-.programer-active{
+.programer-active {
    color: var(--text-hover-tomato);
    border-bottom: 1px solid #f2545f;
 }
-.pro-active{
+
+.pro-active {
    color: black;
    border-bottom: none;
 }

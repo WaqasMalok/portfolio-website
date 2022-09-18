@@ -1,0 +1,36 @@
+@media(max-width:992px){ 
+    .hero__tittle { 
+        font-size: 45px; 
+        white-space: nowrap;
+    } 
+    .hero__btn__white a, .hero__btn__tomatto a{
+        padding: 9px 25px 4px 25px;
+    } 
+}
+@media(max-width:600px){ 
+    .hero__subtittle{
+        font-size: 18px;
+        word-spacing: 4px;
+    }
+    .hero__tittle { 
+        font-size: 35px;  
+    }  
+    .company__text p {
+        line-height: 1.7rem;
+        word-spacing: 0px;
+    }
+}
+@media(max-width:490px){ 
+    .hero__subtittle{
+        font-size: 18px;
+        word-spacing: 1px;
+
+    }
+    .hero__tittle { 
+        font-size: 25px;  
+    } 
+    .hero__btn__white a, .hero__btn__tomatto a{
+        padding: 6px 18px 1px 18px;
+        font-size: 13px;
+    } 
+}
