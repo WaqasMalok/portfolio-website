@@ -144,6 +144,7 @@ header {
 
 .logo-icon {
    white-space: nowrap;
+   font-size: 25px;
 }
 
 @media(max-width:1220px) {
@@ -159,7 +160,9 @@ header {
 
 .nav .nav-item .nav-link {
    color: #fff;
-   font-size: 14px;
+   font-size: 11px;
+   letter-spacing: 1px;
+   padding: 5px;
 }
 
 .nav .nav-item .nav-link:hover {
@@ -332,7 +335,16 @@ header {
    color: #fff;
 }
 
-
+/* OUR SECTION TEAM  */
+ 
+.team__text h2{
+   font-size: 30px;
+   line-height: 3rem;
+}
+.team__text p{
+   font-size: 17px;
+   font-weight: 300;
+}
 
 
 
@@ -527,6 +539,9 @@ header {
    box-shadow: 2px 2px 6px 0px rgba(37, 37, 37, 0.089);
 }
 
+.question__des1{
+   display: block;
+}
 .question__header {
    color: var(--text-white);
    background: #f0f0f0;
@@ -553,8 +568,13 @@ header {
 
 .question__close {
    display: none;
+} 
+#question_close{
+   display: block;
 }
-
+#question_open{
+   display: none;
+}
 /* OUR COUNTER SECTOIN STYLED  */
 .counter {
    background:
