@@ -1,30 +1,5 @@
 
-
-
-
-function show() {
-    let showbtn = document.getElementById("navshow-btn");
-    let navbar = document.getElementById("navmb");
-    let hidebtn = document.getElementById("navhide-btn");
-    showbtn.style.display = "none";
-    hidebtn.style.display = "block";
-    navbar.style.display = "block";
-}
-function hide() {
-    let showbtn = document.getElementById("navshow-btn");
-    let navbar = document.getElementById("navmb");
-    let hidebtn = document.getElementById("navhide-btn");
-    showbtn.style.display = "block";
-    hidebtn.style.display = "none";
-    navbar.style.display = "none";
-}
-
-window.addEventListener("scroll", function () {
-    let nav = document.querySelector("header");
-    nav.classList.toggle("navblack", window.scrollY > 0);
-
-});
-
+ 
 
 function open__des() {
     let show_des = document.getElementById("question_open");
@@ -132,17 +107,7 @@ window.addEventListener("scroll", function () {
     let offset = window.pageYOffset;
     parallax2.style.backgroundPositionY = offset * 0.19 + "px";
 
-});
-// const parallax3 = document.getElementById("hero");
-// window.addEventListener("scroll", function ()
-// {
-//     let offset = window.pageYOffset;
-//     parallax3.style.backgroundPositionY = offset * 0.7 + "px";
-
-// }); 
-
-
-
+}); 
 function first_day() {
     let first_day = document.getElementById("first_day");
     let first_card = document.getElementById("first_card");
