@@ -127,6 +127,7 @@ header{
    padding: 15px 0px 10px 0px;
    color: #fff;
    background-color: #000000;
+  
 } 
 
 .logo-icon {
@@ -175,20 +176,18 @@ header{
    .menubtn{
       display: none;
    }
- }
+ } 
  .mbnav .nav{
    transform: translateX(0px);
    transition: all 0.5s ease-in-out;
     
  }
  @media (max-width:1000px){
-   header{
-      position: relative;
-   }
+  
      .nav{
       position: absolute;
       top: 60px;
-      z-index: 9;
+      z-index: 9999;
       left: 0%;
       background-color: #505050;
       width: 100%;
