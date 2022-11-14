@@ -1,8 +1,12 @@
 document.querySelector(".menubtn").addEventListener("click", dd);
 function dd() {
-    document.querySelector("header").add.addEventListener.classList.toggle(".mbnav");
+    document.querySelector("header").classList.toggle("mbnav");
 }
- 
+// document.querySelector('.burgger').addEventListener('click', show);
+// function show() {
+//   document.querySelector('header').classList.toggle('menu');
+//   document.querySelector('burgger').classList.toggle('close');
+// }
 
 function open__des() {
     let show_des = document.getElementById("question_open");

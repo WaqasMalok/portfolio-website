@@ -179,6 +179,7 @@ header{
  .mbnav .nav{
    transform: translateX(0px);
    transition: all 0.5s ease-in-out;
+    
  }
  @media (max-width:1000px){
    header{
