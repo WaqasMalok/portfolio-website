@@ -1,4 +1,7 @@
-
+document.querySelector(".menubtn").addEventListener("click", dd);
+function dd() {
+    document.querySelector("header").add.addEventListener.classList.toggle(".mbnav");
+}
  
 
 function open__des() {
