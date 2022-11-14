@@ -120,25 +120,21 @@ a{
 
 
 /* OUR HEADER SECTION  */
-
-#navigation {
-   width: 100%;
+header{
+    width: 100%;
    height: 70px;
    border-bottom: 3px solid #f2545f;
    padding: 15px 0px 10px 0px;
    color: #fff;
    background-color: #000000;
-}
+} 
 
 .logo-icon {
    white-space: nowrap;
    font-size: 25px;
-   
-}
-.logo-icon a{
    color: #fff;
-
-}
+   
+} 
 .logo-icon a:hover {
    color: var(--text-hover-tomato);
 }
@@ -171,7 +167,18 @@ a{
    background-color: #f0f0f0;
    border-radius: 100px;
 }
- 
+.menubtn:hover .bar{ 
+   background-color: var(--text-hover-tomato);
+
+}
+ @media (min-width:1000px){
+   .menubtn{
+      display: none;
+   }
+ }
+ @media (max-width:1000px){
+     
+ }
     
 /* OUR HERO SECTION  */
 #hero {
