@@ -231,7 +231,7 @@ header{
    word-spacing: 10px;
    font-weight: 600;
 }
-
+/* responsive nav style  */
 @media(max-width:1000px) {
 
    .hero__subtittle {
